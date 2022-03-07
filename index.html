@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Corona World Map</title>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.css' rel='stylesheet' />
+
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+
+        }
+        #map{
+            height: 100vh;
+            width: 100vw;
+        }
+        .container{
+            display: flex;
+            flex-direction: column;
+            z-index: 1;
+            position: relative;
+            top: 500px;
+            margin: 20px;
+            width: 100px;
+            cursor: none;
+        }
+        #color{
+            background-color: #EEE44A;
+            width: 40px;
+            height: 25px;
+            display: inline-block;
+        }
+        #color2{
+            background-color: #F88502;
+            
+            width: 40px;
+            height: 25px;
+            display: inline-block;
+        }
+        #color3{
+            background-color: #F85500;
+            width: 40px;
+            height: 25px;
+            display: inline-block;
+        }
+        #color4{
+            background-color: #C42A02;
+            width: 40px;
+            height: 25px;
+            display: inline-block;
+        }
+        #color5{
+            background-color: #911B01;
+            width: 40px;
+            height: 25px;
+            display: inline-block;
+        }
+        #color6{
+            background-color:#6B1500;
+            width: 40px;
+            height: 25px;
+            display: inline-block;
+        }
+        #quote{
+            font-weight: 550;
+            display: inline-block;
+            margin: 0 10px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+    </style>
+</head>
+<body>
+    <div id='map'>
+        <div class="container">
+            <div class="row">
+                <span id="color"></span>
+                <span id="quote"><200</span>
+            </div>
+    
+            <div class="row">
+                <span id="color2"></span>
+                <span id="quote"><400</span>
+            </div>
+    
+            <div class="row">
+                <span id="color3"></span>
+                <span id="quote"><700</span>
+            </div>
+    
+            <div class="row">
+                <span id="color4"></span>
+                <span id="quote"><1000</span>
+            </div>
+    
+            <div class="row">
+                <span id="color5"></span>
+                <span id="quote"><1500</span>
+            </div>
+    
+            <div class="row">
+                <span id="color6"></span>
+                <span id="quote"> <5000</span>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+<script src='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.js'></script>
+
+<script>
+  mapboxgl.accessToken = 'pk.eyJ1IjoiYWJoYXkxMDAiLCJhIjoiY2wwY2I5bjR4MDBldjNibGdoaWV2ejJ3cSJ9.u5_7uhwMiU7ZztmPol7t7w';
+  var map = new mapboxgl.Map({
+    container: 'map',
+    style: 'mapbox://styles/mapbox/streets-v11',
+    // style: 'mapbox://styles/mapbox/dark-v10',
+    zoom:1
+  });
+</script>
+
+
+<script src="index.js"></script>
+</html>
